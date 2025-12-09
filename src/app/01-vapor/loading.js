@@ -11,8 +11,8 @@ function VaporExerciseLoading() {
         <h1>My games</h1>
       </header>
       <div className="game-grid">
-        {range(12).map(() => (
-          <LibraryGameCardSkeleton />
+        {range(12).map((num) => (
+          <LibraryGameCardSkeleton key={num} />
         ))}
       </div>
     </section>
